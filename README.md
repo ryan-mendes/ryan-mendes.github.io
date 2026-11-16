@@ -1,15 +1,5 @@
 # ryan-mendes.github.io
 
-Portfólio pessoal de **Ryan Mendes**, Full Stack Developer. Site estático (HTML, CSS e JavaScript puros), responsivo e publicado com GitHub Pages.
+Personal site of Ryan Mendes. Static HTML and CSS with no build step, served by GitHub Pages. It supports light and dark themes based on system preference.
 
-🔗 **https://ryan-mendes.github.io**
-
-## Rodar localmente
-
-Abra o `index.html` no navegador, ou:
-
-```bash
-npx serve .
-```
-
-Para adicionar um projeto, edite a lista `projects` em `script.js`.
+**Live:** https://ryan-mendes.github.io

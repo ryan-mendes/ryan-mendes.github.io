@@ -1,69 +1,126 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ryan Mendes · Full Stack Developer</title>
-  <meta name="description" content="Portfólio de Ryan Mendes, desenvolvedor Full Stack: Node.js, TypeScript, Python, React e Next.js.">
-  <meta property="og:title" content="Ryan Mendes · Full Stack Developer">
-  <meta property="og:description" content="APIs, sistemas de gestão e aplicações web de ponta a ponta.">
+  <title>Ryan Mendes · Full-Stack Developer</title>
+  <meta name="description" content="Ryan Mendes is a full-stack developer building ERP systems, APIs and integrations.">
+  <meta property="og:title" content="Ryan Mendes · Full-Stack Developer">
+  <meta property="og:description" content="Full-stack developer building ERP systems, APIs and integrations.">
   <meta property="og:image" content="https://ryan-mendes.github.io/assets/ryan.jpeg">
   <link rel="icon" href="assets/ryan.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#">ryan<span>.</span>mendes</a>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+  <div class="page">
+    <header class="intro">
+      <img class="portrait" src="assets/ryan.jpeg" alt="Ryan Mendes" width="88" height="88">
+      <h1>Ryan Mendes</h1>
+      <p class="role">Full-stack developer · ERP systems</p>
+      <p class="summary">
+        I build and maintain business software end to end: data modeling and SQL, APIs and
+        integrations, and the interfaces people rely on every day. A background in infrastructure
+        and IT leadership shapes how I work. I think about software in terms of the operation it supports.
+      </p>
+      <nav class="links" aria-label="Contact">
+        <a href="https://github.com/ryan-mendes">GitHub</a>
+        <a href="https://www.linkedin.com/in/ryan-mendes-b7197322a/">LinkedIn</a>
+        <a href="mailto:ryanmendes007@gmail.com">Email</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="tag">Olá, eu sou</p>
-        <h1>Ryan Mendes</h1>
-        <h2>Full Stack Developer</h2>
-        <p class="lead">Desenvolvo aplicações web de ponta a ponta: APIs REST, autenticação, banco de dados e interfaces em React e Next.js. Experiência com sistemas de gestão, integrações e automação de processos.</p>
-        <div class="cta">
-          <a class="btn primary" href="#projetos">Ver projetos</a>
-          <a class="btn" href="https://github.com/ryan-mendes" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/ryan-mendes-b7197322a/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+    <section>
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="item-head">
+            <h3>Full-Stack Developer</h3>
+            <span class="meta">Fikon Sistemas</span>
+          </div>
+          <p>Develops and evolves corporate ERP modules on the Nginstack platform: business rules, SQL data access, APIs, integrations and user interfaces.</p>
+        </li>
+        <li>
+          <div class="item-head">
+            <h3>IT Analyst</h3>
+            <span class="meta">Previous role</span>
+          </div>
+          <p>Led the technology team and owned the company's software ecosystem, connecting operational needs to systems and infrastructure decisions.</p>
+        </li>
+        <li>
+          <div class="item-head">
+            <h3>Infrastructure &amp; Systems Support</h3>
+            <span class="meta">Earlier</span>
+          </div>
+          <p>Network and infrastructure support, later moving into business systems administration.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Selected work</h2>
+      <ul class="projects">
+        <li>
+          <a class="project" href="https://github.com/ryan-mendes/inventory-order-api">
+            <div class="item-head">
+              <h3>Inventory &amp; Order API</h3>
+              <span class="meta">TypeScript · Express · SQLite</span>
+            </div>
+            <p>Inventory and sales order API modeled on ERP back-office rules: atomic stock reservation, an enforced order workflow and an auditable stock ledger. Integration-tested, with CI and Docker.</p>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/ryan-mendes/rbac-user-management">
+            <div class="item-head">
+              <h3>RBAC User Management</h3>
+              <span class="meta">Node.js · Express · Next.js</span>
+            </div>
+            <p>Full-stack user management with JWT authentication and role-based access for administrators, managers and users.</p>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/ryan-mendes/task-management-api">
+            <div class="item-head">
+              <h3>Task Management API</h3>
+              <span class="meta">NestJS · PostgreSQL · TypeORM</span>
+            </div>
+            <p>REST API with authentication, DTO validation and versioned database migrations.</p>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/ryan-mendes/school-cafeteria-system-design">
+            <div class="item-head">
+              <h3>School Cafeteria System Design</h3>
+              <span class="meta">UML · Requirements</span>
+            </div>
+            <p>Requirements analysis and UML design: scope, use cases, class model and interaction diagrams.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="two-col">
+      <div>
+        <h2>Skills</h2>
+        <dl class="skills">
+          <dt>Languages</dt><dd>JavaScript, TypeScript, SQL, Python</dd>
+          <dt>Back end</dt><dd>Node.js, NestJS, Express, Nginstack</dd>
+          <dt>Front end</dt><dd>React, Next.js</dd>
+          <dt>Data &amp; tools</dt><dd>PostgreSQL, Supabase, Docker, Git</dd>
+        </dl>
       </div>
-      <img class="avatar" src="assets/ryan.jpeg" alt="Foto de Ryan Mendes" width="320" height="320">
-    </section>
-
-    <section id="sobre">
-      <h3 class="section-title">Tecnologias</h3>
-      <div class="stack">
-        <div class="stack-group"><h4>Back-end</h4><ul><li>Node.js</li><li>TypeScript</li><li>NestJS</li><li>Express</li><li>Python</li><li>Flask</li><li>Java</li></ul></div>
-        <div class="stack-group"><h4>Front-end</h4><ul><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>styled-components</li><li>HTML &amp; CSS</li></ul></div>
-        <div class="stack-group"><h4>Dados &amp; Ferramentas</h4><ul><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>Supabase</li><li>Docker</li><li>Git</li></ul></div>
+      <div>
+        <h2>Education</h2>
+        <p class="edu"><strong>Telematics</strong><br><span class="meta">Instituto Federal do Ceará (IFCE)</span></p>
       </div>
     </section>
 
-    <section id="projetos">
-      <h3 class="section-title">Projetos</h3>
-      <div class="grid" id="project-grid"></div>
-    </section>
-
-    <section id="contato" class="contact">
-      <h3 class="section-title">Vamos conversar?</h3>
-      <p>Estou aberto a oportunidades e projetos. Me chame por e-mail ou LinkedIn.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:ryanmendes007@gmail.com">ryanmendes007@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/ryan-mendes-b7197322a/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>© <span id="year"></span> Ryan Mendes</footer>
-  <script src="script.js"></script>
+    <footer>
+      <span>Ryan Mendes</span>
+      <a href="mailto:ryanmendes007@gmail.com">ryanmendes007@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>
