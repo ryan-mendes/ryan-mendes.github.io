@@ -5,52 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ryan Mendes · Full-Stack Developer</title>
   <meta name="description" content="Ryan Mendes is a full-stack developer building ERP systems, APIs and integrations.">
+  <meta name="theme-color" content="#0a0a0b">
   <meta property="og:title" content="Ryan Mendes · Full-Stack Developer">
   <meta property="og:description" content="Full-stack developer building ERP systems, APIs and integrations.">
   <meta property="og:image" content="https://ryan-mendes.github.io/assets/portrait.jpg">
   <link rel="icon" href="assets/portrait.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page">
-    <header class="intro">
-      <img class="portrait" src="assets/portrait.jpg" alt="Ryan Mendes" width="88" height="88">
-      <h1>Ryan Mendes</h1>
-      <p class="role">Full-stack developer · ERP systems</p>
-      <p class="summary">
-        I build and maintain business software end to end: data modeling and SQL, APIs and
-        integrations, and the interfaces people rely on every day. A background in infrastructure
-        and IT leadership shapes how I work. I think about software in terms of the operation it supports.
-      </p>
-      <nav class="links" aria-label="Contact">
-        <a href="https://github.com/ryan-mendes">GitHub</a>
-        <a href="https://www.linkedin.com/in/ryan-mendes-b7197322a/">LinkedIn</a>
-        <a href="mailto:ryanmendes007@gmail.com">Email</a>
-      </nav>
-    </header>
+  <div class="letterbox letterbox--top" aria-hidden="true"></div>
+  <div class="letterbox letterbox--bottom" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-    <section>
-      <h2>Experience</h2>
+  <header class="nav">
+    <a class="nav__brand" href="#top">RM</a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal-intro" style="--d: 1.0s">Full-stack developer &nbsp;/&nbsp; ERP systems</p>
+        <h1 class="hero__name" aria-label="Ryan Mendes">
+          <span class="line"><span class="split">Ryan</span></span>
+          <span class="line"><span class="split split--italic">Mendes</span></span>
+        </h1>
+        <p class="hero__summary reveal-intro" style="--d: 1.9s">
+          I build business software end to end: data models and SQL, APIs and integrations,
+          and the interfaces people rely on every day.
+        </p>
+        <div class="hero__cta reveal-intro" style="--d: 2.2s">
+          <a class="btn btn--primary" href="#work">View work</a>
+          <a class="btn" href="https://github.com/ryan-mendes">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/ryan-mendes-b7197322a/">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="stage__glow"></div>
+        <div class="stage__ring stage__ring--outer"></div>
+        <div class="stage__ring stage__ring--inner"></div>
+        <img class="stage__person" src="assets/ryan-cutout.png" alt="" width="400" height="400">
+        <div class="orbit" id="orbit"></div>
+      </div>
+
+      <a class="scroll-cue reveal-intro" style="--d: 2.8s" href="#experience" aria-label="Scroll to content">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="experience">
+      <header class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2>Experience</h2>
+      </header>
       <ol class="timeline">
-        <li>
-          <div class="item-head">
+        <li class="reveal">
+          <div class="timeline__head">
             <h3>Full-Stack Developer</h3>
             <span class="meta">Fikon Sistemas</span>
           </div>
           <p>Develops and evolves corporate ERP modules on the Nginstack platform: business rules, SQL data access, APIs, integrations and user interfaces.</p>
         </li>
-        <li>
-          <div class="item-head">
+        <li class="reveal">
+          <div class="timeline__head">
             <h3>IT Analyst</h3>
             <span class="meta">Previous role</span>
           </div>
           <p>Led the technology team and owned the company's software ecosystem, connecting operational needs to systems and infrastructure decisions.</p>
         </li>
-        <li>
-          <div class="item-head">
+        <li class="reveal">
+          <div class="timeline__head">
             <h3>Infrastructure &amp; Systems Support</h3>
             <span class="meta">Earlier</span>
           </div>
@@ -59,51 +91,42 @@
       </ol>
     </section>
 
-    <section>
-      <h2>Selected work</h2>
-      <ul class="projects">
-        <li>
-          <a class="project" href="https://github.com/ryan-mendes/inventory-order-api">
-            <div class="item-head">
-              <h3>Inventory &amp; Order API</h3>
-              <span class="meta">TypeScript · Express · SQLite</span>
-            </div>
-            <p>Inventory and sales order API modeled on ERP back-office rules: atomic stock reservation, an enforced order workflow and an auditable stock ledger. Integration-tested, with CI and Docker.</p>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/ryan-mendes/rbac-user-management">
-            <div class="item-head">
-              <h3>RBAC User Management</h3>
-              <span class="meta">Node.js · Express · Next.js</span>
-            </div>
-            <p>Full-stack user management with JWT authentication and role-based access for administrators, managers and users.</p>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/ryan-mendes/task-management-api">
-            <div class="item-head">
-              <h3>Task Management API</h3>
-              <span class="meta">NestJS · PostgreSQL · TypeORM</span>
-            </div>
-            <p>REST API with authentication, DTO validation and versioned database migrations.</p>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/ryan-mendes/school-cafeteria-system-design">
-            <div class="item-head">
-              <h3>School Cafeteria System Design</h3>
-              <span class="meta">UML · Requirements</span>
-            </div>
-            <p>Requirements analysis and UML design: scope, use cases, class model and interaction diagrams.</p>
-          </a>
-        </li>
-      </ul>
+    <section class="section" id="work">
+      <header class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2>Selected work</h2>
+      </header>
+      <div class="cards">
+        <a class="card card--feature reveal" href="https://github.com/ryan-mendes/inventory-order-api">
+          <span class="card__tag">Featured</span>
+          <h3>Inventory &amp; Order API</h3>
+          <p>Inventory and sales order API modeled on ERP back-office rules: atomic stock reservation, an enforced order workflow and an auditable stock ledger. Integration-tested, with CI and Docker.</p>
+          <span class="card__stack">TypeScript · Express · SQLite · Vitest</span>
+        </a>
+        <a class="card reveal" href="https://github.com/ryan-mendes/rbac-user-management">
+          <h3>RBAC User Management</h3>
+          <p>Full-stack user management with JWT authentication and role-based access for administrators, managers and users.</p>
+          <span class="card__stack">Node.js · Express · Next.js</span>
+        </a>
+        <a class="card reveal" href="https://github.com/ryan-mendes/task-management-api">
+          <h3>Task Management API</h3>
+          <p>REST API with authentication, DTO validation and versioned database migrations.</p>
+          <span class="card__stack">NestJS · PostgreSQL · TypeORM</span>
+        </a>
+        <a class="card reveal" href="https://github.com/ryan-mendes/school-cafeteria-system-design">
+          <h3>School Cafeteria System Design</h3>
+          <p>Requirements analysis and UML design: scope, use cases, class model and interaction diagrams.</p>
+          <span class="card__stack">UML · Requirements</span>
+        </a>
+      </div>
     </section>
 
-    <section class="two-col">
-      <div>
-        <h2>Skills</h2>
+    <section class="section section--split">
+      <div class="reveal">
+        <header class="section__head">
+          <span class="section__index">03</span>
+          <h2>Skills</h2>
+        </header>
         <dl class="skills">
           <dt>Languages</dt><dd>JavaScript, TypeScript, SQL, Python</dd>
           <dt>Back end</dt><dd>Node.js, NestJS, Express, Nginstack</dd>
@@ -111,16 +134,30 @@
           <dt>Data &amp; tools</dt><dd>PostgreSQL, Supabase, Docker, Git</dd>
         </dl>
       </div>
-      <div>
-        <h2>Education</h2>
+      <div class="reveal">
+        <header class="section__head">
+          <span class="section__index">04</span>
+          <h2>Education</h2>
+        </header>
         <p class="edu"><strong>Telematics</strong><br><span class="meta">Instituto Federal do Ceará (IFCE)</span></p>
       </div>
     </section>
 
-    <footer>
-      <span>Ryan Mendes</span>
-      <a href="mailto:ryanmendes007@gmail.com">ryanmendes007@gmail.com</a>
-    </footer>
-  </div>
+    <section class="contact" id="contact">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="contact__title reveal">Let's build something<br><em>that runs the business.</em></h2>
+      <a class="contact__mail reveal" href="mailto:ryanmendes007@gmail.com">ryanmendes007@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Ryan Mendes</span>
+    <span class="footer__links">
+      <a href="https://github.com/ryan-mendes">GitHub</a>
+      <a href="https://www.linkedin.com/in/ryan-mendes-b7197322a/">LinkedIn</a>
+    </span>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
