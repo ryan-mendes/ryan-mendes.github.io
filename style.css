@@ -42,7 +42,7 @@ h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
   height: 88px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 50% 15%;
+  object-position: center;
   margin-bottom: 28px;
 }
 
