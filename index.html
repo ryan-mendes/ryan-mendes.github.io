@@ -52,7 +52,16 @@
         <div class="stage__glow"></div>
         <div class="stage__ring stage__ring--outer"></div>
         <div class="stage__ring stage__ring--inner"></div>
-        <img class="stage__person" src="assets/ryan-cutout.png" alt="" width="400" height="400">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/ryan-640.webp 640w, assets/ryan-1100.webp 1100w"
+                  sizes="(max-width: 900px) 80vw, min(30vw, 600px)">
+          <img class="stage__person"
+               src="assets/ryan-1100.png"
+               srcset="assets/ryan-640.png 640w, assets/ryan-1100.png 1100w"
+               sizes="(max-width: 900px) 80vw, min(30vw, 600px)"
+               alt="" width="1100" height="1100" fetchpriority="high" decoding="async">
+        </picture>
         <div class="orbit" id="orbit"></div>
       </div>
 
